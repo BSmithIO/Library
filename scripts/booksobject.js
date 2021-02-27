@@ -8,6 +8,7 @@ const submitBook = document.querySelector(".submitBook");
 const formPopup = document.querySelector(".form-popup");
 const closeBtn = document.querySelector(".close");
 
+restore();
 
 submitBook.addEventListener("click", addBookToLibrary);
 
@@ -108,4 +109,15 @@ function displayBooks() {
 }
 function saveBooks() {
     localStorage.setItem(`myLibrary`, JSON.stringify(myLibrary));
+}
+
+function restore() {
+    if(!localStorage.myLibrary) {
+        displayBooks();
+    }else {
+        let objects = localStorage.getItem('myLibrary');
+        objects = JSON.parse(objects);
+        myLibrary = objects;
+        displayBooks();
+    }
 }
