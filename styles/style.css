@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B612', sans-serif;
+}
+#header {
+    text-align: center;
+    background-color: rgb(115, 115, 250);
+    color: white;
+}
+.newbook {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.newbook:hover {
+    opacity: 90%;
+}
+
+.form-container > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color:white;
+}
+
+.submitBook {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.body {
+    position: relative;
+}
+
+input {
+    width: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form-popup {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    background-color: rgb(115, 115, 250);
+}
+
+.form-popup h2 {
+    padding: 2px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkbox > *{
+    margin-left: 5px;
+}
+
+.library {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.readYet {
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.deleteBook {
+    cursor: pointer;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;   
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    width: 150px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: gray;
+    color: white;
+}
+
+.book > * {
+    margin-bottom: 15px;
+}
+
+.book p {
+    font-size: 14px;
+}

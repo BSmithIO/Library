@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=B612&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header">
+    <h1>Library App</h1>
+    <button type="button" class="newbook btn">Add a book</button>
+    <div class="form-popup" id="bookForm">
+        <button class="close">x</button>
+        <h2>New Book</h2>    
+        <form class="form-container">
+            <input class="title" type="text" placeholder="Title" name="title" required>
+            <input class="author" type="text" placeholder="Author" name="author" required>
+            <input class="pages" type="number" placeholder="Pages" name="pages" required>
+            <div class="checkbox">
+                <label for="read">Read?</label>
+                <input class="read" type="checkbox" name="read">
+            </div>
+            <button class="submitBook" type="button" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="library">
+
+</div>
+<script src="scripts/booksobject.js"></script>
+</body>
+</html>
